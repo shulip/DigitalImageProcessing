@@ -15,29 +15,23 @@
 4. 用动态效果展示图像。
 
 
-四、实验结果截图
-1.
+# 四、结果截图
+## 1.
 添加两张图像， 长宽分别长
- 
+![image](https://github.com/shulip/DigitalImageProcessing/blob/master/%E5%9B%BE%E5%83%8F%E7%9A%84%E7%AE%97%E6%9C%AF%E8%BF%90%E7%AE%97/image/01.png)
 
 选择融合，点击运行
- 
+![image](https://github.com/shulip/DigitalImageProcessing/blob/master/%E5%9B%BE%E5%83%8F%E7%9A%84%E7%AE%97%E6%9C%AF%E8%BF%90%E7%AE%97/image/02.png)
+
 改变下方拉条可实现不同程度融合
 
-2.
+## 2.
 选择相减，再分别选择A-B与B-A后点击执行
- 
+ ![image](https://github.com/shulip/DigitalImageProcessing/blob/master/%E5%9B%BE%E5%83%8F%E7%9A%84%E7%AE%97%E6%9C%AF%E8%BF%90%E7%AE%97/image/03.png)
 
-3.
+## 3.
 效果如1,2所示
-
  
-4.
+## 4.
 进行旋转
- 
-
-五、实验体会
-本次实验实现了图像的相加与相减，直观地了解到了相加与相减对图像的影响。
-在相加时，可能会有图像大小不相同的问题，因此首先我们要对图像进行处理，使他们的矩阵大小相同，不同大小的矩阵无法进行相加。在相加时通过调整阈值可以实现不同程度的相加。
-图像相减就是使图像之间的差异体现出来，比如我在Lena图像上添加了一些点，在相减时也就体现出了这些点，图像相减时可能会出现负数，但负数无法映射到颜色区间上，因此我们还需要通过绝对值使他们映射到[0,255]区间上进行显示。
-GUI是整个操作流尘能够更加直观，十分方便。
+ ![image](https://github.com/shulip/DigitalImageProcessing/blob/master/%E5%9B%BE%E5%83%8F%E7%9A%84%E7%AE%97%E6%9C%AF%E8%BF%90%E7%AE%97/image/04.png)
