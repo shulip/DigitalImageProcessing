@@ -1,0 +1,554 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1200</width>
+    <height>765</height>
+   </rect>
+  </property>
+  <property name="minimumSize">
+   <size>
+    <width>940</width>
+    <height>400</height>
+   </size>
+  </property>
+  <property name="maximumSize">
+   <size>
+    <width>1500</width>
+    <height>1000</height>
+   </size>
+  </property>
+  <property name="windowTitle">
+   <string>图像处理</string>
+  </property>
+  <property name="windowIcon">
+   <iconset>
+    <normaloff>:/SVG/img/smile.svg</normaloff>:/SVG/img/smile.svg</iconset>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QFrame" name="frame">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>40</y>
+      <width>1211</width>
+      <height>711</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: rgb(250, 242, 240);
+background-color: rgb(232, 233, 235);
+background-color: rgb(250, 245, 245);
+background-color: rgb(232, 231, 223);
+</string>
+    </property>
+    <property name="frameShape">
+     <enum>QFrame::StyledPanel</enum>
+    </property>
+    <property name="frameShadow">
+     <enum>QFrame::Raised</enum>
+    </property>
+    <widget class="QFrame" name="frame_image">
+     <property name="geometry">
+      <rect>
+       <x>70</x>
+       <y>70</y>
+       <width>501</width>
+       <height>501</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">background-color: rgb(239 ,100 ,97);
+border-radius:15px;</string>
+     </property>
+     <property name="frameShape">
+      <enum>QFrame::StyledPanel</enum>
+     </property>
+     <property name="frameShadow">
+      <enum>QFrame::Raised</enum>
+     </property>
+     <widget class="QLabel" name="label_camera">
+      <property name="geometry">
+       <rect>
+        <x>40</x>
+        <y>10</y>
+        <width>81</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">font: 11pt &quot;黑体&quot;;
+color: rgb(49, 54, 56);</string>
+      </property>
+      <property name="text">
+       <string>图像</string>
+      </property>
+     </widget>
+     <widget class="QGraphicsView" name="graphicsView_image">
+      <property name="geometry">
+       <rect>
+        <x>0</x>
+        <y>40</y>
+        <width>501</width>
+        <height>461</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: rgb(222, 222, 222);
+border-top-left-radius:15px;
+border-top-right-radius:15px;
+border-bottom-left-radius:15px;
+border-bottom-right-radius:15px;
+background-color: rgb(227, 222, 222);
+background-color: rgb(224, 223, 213);
+background-color: rgb(232, 233, 235);
+
+
+</string>
+      </property>
+     </widget>
+    </widget>
+    <widget class="QFrame" name="frame_curve">
+     <property name="geometry">
+      <rect>
+       <x>610</x>
+       <y>70</y>
+       <width>521</width>
+       <height>501</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">background-color: rgb(239 ,100 ,97);
+border-radius:15px;</string>
+     </property>
+     <property name="frameShape">
+      <enum>QFrame::StyledPanel</enum>
+     </property>
+     <property name="frameShadow">
+      <enum>QFrame::Raised</enum>
+     </property>
+     <widget class="QLabel" name="label_detect">
+      <property name="geometry">
+       <rect>
+        <x>40</x>
+        <y>10</y>
+        <width>121</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">font: 11pt &quot;黑体&quot;;
+color: rgb(49, 54, 56);</string>
+      </property>
+      <property name="text">
+       <string>曲线</string>
+      </property>
+     </widget>
+     <widget class="QGraphicsView" name="graphicsView_curve">
+      <property name="geometry">
+       <rect>
+        <x>0</x>
+        <y>40</y>
+        <width>521</width>
+        <height>461</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: rgb(227, 222, 222);
+border-top-left-radius:15px;
+border-top-right-radius:15px;
+border-bottom-left-radius:15px;
+border-bottom-right-radius:15px;
+background-color: rgb(224, 223, 213);
+background-color: rgb(232, 233, 235);
+
+</string>
+      </property>
+     </widget>
+    </widget>
+    <widget class="QFrame" name="frame_down">
+     <property name="geometry">
+      <rect>
+       <x>0</x>
+       <y>600</y>
+       <width>1211</width>
+       <height>121</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">
+background-color: rgb(244, 215, 215);
+background-color: rgb(239, 151, 96);
+background-color: rgb(239, 163, 115);
+background-color: rgb(224, 223, 213);
+background-color: rgb(229, 230, 230);
+background-color: rgb(224, 223, 213);
+background-color: rgb(250, 245, 245);
+border-radius:35px;</string>
+     </property>
+     <property name="frameShape">
+      <enum>QFrame::StyledPanel</enum>
+     </property>
+     <property name="frameShadow">
+      <enum>QFrame::Raised</enum>
+     </property>
+     <widget class="QSlider" name="horizontalSlider_a">
+      <property name="geometry">
+       <rect>
+        <x>90</x>
+        <y>30</y>
+        <width>481</width>
+        <height>21</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QSlider::groove:horizontal{ height: 10px; 
+                            left: 10px; 
+                            right: 10px; 
+                            background: #dcdcdc; 
+}
+
+QSlider::handle:horizontal{ 
+                             radius: 7px;
+                             border-radius: 7px; 
+                             border: 3px solid rgb(255, 255, 255);
+                             width:  9px; 
+                             margin: -5px -3px; 
+                             background: rgb(255, 183, 120); 
+} 
+
+QSlider::sub-page:horizontalSlider:disabled {
+
+                             background: #6c6c6c; 
+                             border-color: #999;
+                             border-radius: 2px;
+} 
+
+QSlider::add-page:horizontalSlider:disabled {
+ 
+                             background: #ffffff;
+                             border-color: #999;
+                             border-radius: 2px;
+}</string>
+      </property>
+      <property name="maximum">
+       <number>1</number>
+      </property>
+      <property name="singleStep">
+       <number>1</number>
+      </property>
+      <property name="orientation">
+       <enum>Qt::Horizontal</enum>
+      </property>
+     </widget>
+     <widget class="QSlider" name="horizontalSlider_b">
+      <property name="geometry">
+       <rect>
+        <x>640</x>
+        <y>30</y>
+        <width>491</width>
+        <height>21</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QSlider::groove:horizontal{ height: 10px; 
+                            left: 10px; 
+                            right: 10px; 
+                            background: #dcdcdc; 
+}
+
+QSlider::handle:horizontal{ 
+                             radius: 7px;
+                             border-radius: 7px; 
+                             border: 3px solid rgb(255, 255, 255);
+                             width:  9px; 
+                             margin: -5px -3px; 
+                             background: rgb(255, 183, 120); 
+} 
+
+QSlider::sub-page:horizontalSlider:disabled {
+
+                             background: #6c6c6c; 
+                             border-color: #999;
+                             border-radius: 2px;
+} 
+
+QSlider::add-page:horizontalSlider:disabled {
+ 
+                             background: #ffffff;
+                             border-color: #999;
+                             border-radius: 2px;
+}</string>
+      </property>
+      <property name="maximum">
+       <number>1</number>
+      </property>
+      <property name="singleStep">
+       <number>1</number>
+      </property>
+      <property name="orientation">
+       <enum>Qt::Horizontal</enum>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_a">
+      <property name="geometry">
+       <rect>
+        <x>40</x>
+        <y>20</y>
+        <width>101</width>
+        <height>41</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">font: 19pt &quot;黑体&quot;;
+color: rgb(49, 54, 56);</string>
+      </property>
+      <property name="text">
+       <string>a:</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_b">
+      <property name="geometry">
+       <rect>
+        <x>600</x>
+        <y>20</y>
+        <width>101</width>
+        <height>41</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">font: 19pt &quot;黑体&quot;;
+color: rgb(49, 54, 56);</string>
+      </property>
+      <property name="text">
+       <string>b:</string>
+      </property>
+     </widget>
+     <widget class="QSlider" name="horizontalSlider_gamma">
+      <property name="geometry">
+       <rect>
+        <x>140</x>
+        <y>30</y>
+        <width>941</width>
+        <height>21</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QSlider::groove:horizontal{ height: 10px; 
+                            left: 10px; 
+                            right: 10px; 
+                            background: #dcdcdc; 
+}
+
+QSlider::handle:horizontal{ 
+                             radius: 7px;
+                             border-radius: 7px; 
+                             border: 3px solid rgb(255, 255, 255);
+                             width:  9px; 
+                             margin: -5px -3px; 
+                             background: rgb(255, 183, 120); 
+} 
+
+QSlider::sub-page:horizontalSlider:disabled {
+
+                             background: #6c6c6c; 
+                             border-color: #999;
+                             border-radius: 2px;
+} 
+
+QSlider::add-page:horizontalSlider:disabled {
+ 
+                             background: #ffffff;
+                             border-color: #999;
+                             border-radius: 2px;
+}</string>
+      </property>
+      <property name="maximum">
+       <number>1</number>
+      </property>
+      <property name="singleStep">
+       <number>1</number>
+      </property>
+      <property name="orientation">
+       <enum>Qt::Horizontal</enum>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_gamma">
+      <property name="geometry">
+       <rect>
+        <x>30</x>
+        <y>20</y>
+        <width>101</width>
+        <height>41</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">font: 19pt &quot;黑体&quot;;
+color: rgb(49, 54, 56);</string>
+      </property>
+      <property name="text">
+       <string>γ:</string>
+      </property>
+     </widget>
+     <zorder>label_a</zorder>
+     <zorder>horizontalSlider_a</zorder>
+     <zorder>label_b</zorder>
+     <zorder>horizontalSlider_b</zorder>
+     <zorder>horizontalSlider_gamma</zorder>
+     <zorder>label_gamma</zorder>
+    </widget>
+   </widget>
+   <widget class="QFrame" name="frame_top1">
+    <property name="geometry">
+     <rect>
+      <x>-10</x>
+      <y>-50</y>
+      <width>1211</width>
+      <height>121</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">
+background-color: rgb(244, 215, 215);
+background-color: rgb(239, 151, 96);
+background-color: rgb(239, 163, 115);
+background-color: rgb(224, 223, 213);
+background-color: rgb(229, 230, 230);
+background-color: rgb(224, 223, 213);
+background-color: rgb(250, 245, 245);
+border-radius:35px;</string>
+    </property>
+    <property name="frameShape">
+     <enum>QFrame::StyledPanel</enum>
+    </property>
+    <property name="frameShadow">
+     <enum>QFrame::Raised</enum>
+    </property>
+    <widget class="QPushButton" name="pushButton_line">
+     <property name="geometry">
+      <rect>
+       <x>50</x>
+       <y>60</y>
+       <width>90</width>
+       <height>45</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">font: 12pt &quot;黑体&quot;;
+border-radius: 20px;
+background-color: rgb(254, 180, 160);
+background-color: rgb(239 ,100 ,97);
+background-color: rgb(228, 179, 99);
+color: rgb(49, 54, 56);</string>
+     </property>
+     <property name="text">
+      <string>线性</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="pushButton_broken">
+     <property name="geometry">
+      <rect>
+       <x>180</x>
+       <y>60</y>
+       <width>90</width>
+       <height>45</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">font: 12pt &quot;黑体&quot;;
+border-radius: 20px;
+background-color: rgb(254, 180, 160);
+background-color: rgb(239 ,100 ,97);
+background-color: rgb(228, 179, 99);
+color: rgb(49, 54, 56);</string>
+     </property>
+     <property name="text">
+      <string>折线</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="pushButton_curve">
+     <property name="geometry">
+      <rect>
+       <x>300</x>
+       <y>60</y>
+       <width>90</width>
+       <height>45</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">font: 12pt &quot;黑体&quot;;
+border-radius: 20px;
+background-color: rgb(254, 180, 160);
+background-color: rgb(239 ,100 ,97);
+background-color: rgb(228, 179, 99);
+color: rgb(49, 54, 56);</string>
+     </property>
+     <property name="text">
+      <string>曲线</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="pushButton_histeq">
+     <property name="geometry">
+      <rect>
+       <x>430</x>
+       <y>60</y>
+       <width>141</width>
+       <height>45</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">font: 12pt &quot;黑体&quot;;
+border-radius: 20px;
+background-color: rgb(254, 180, 160);
+background-color: rgb(239 ,100 ,97);
+background-color: rgb(228, 179, 99);
+color: rgb(49, 54, 56);</string>
+     </property>
+     <property name="text">
+      <string>直方图均衡化</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="pushButton_gamma">
+     <property name="geometry">
+      <rect>
+       <x>600</x>
+       <y>60</y>
+       <width>101</width>
+       <height>45</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">font: 12pt &quot;黑体&quot;;
+border-radius: 20px;
+background-color: rgb(254, 180, 160);
+background-color: rgb(239 ,100 ,97);
+background-color: rgb(228, 179, 99);
+color: rgb(49, 54, 56);</string>
+     </property>
+     <property name="text">
+      <string>伽马变换</string>
+     </property>
+    </widget>
+   </widget>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>1200</width>
+     <height>23</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+ </widget>
+ <resources>
+  <include location="uiSorce.qrc"/>
+ </resources>
+ <connections/>
+</ui>
