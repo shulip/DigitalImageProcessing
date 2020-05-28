@@ -15,7 +15,7 @@
 4. 用动态效果展示图像。
 
 
-# 四、结果截图
+# 三、结果截图
 ## 1.
 添加两张图像， 长宽分别长
 ![image](https://github.com/shulip/DigitalImageProcessing/blob/master/%E5%9B%BE%E5%83%8F%E7%9A%84%E7%AE%97%E6%9C%AF%E8%BF%90%E7%AE%97/image/01.png)
